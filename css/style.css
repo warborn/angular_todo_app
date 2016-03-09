@@ -1,0 +1,158 @@
+.clear:before,
+.clear:after {
+    content: " ";
+    display: table;
+}
+
+.clear:after {
+    clear: both;
+}
+
+
+
+body {
+  color: #414141;
+  font-family: 'Nunito', sans-serif;
+  background-color: #e0e0e0;
+  font-size: 1.1em;
+}
+
+a {
+  color: #265785;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #4c8dc9;
+}
+
+input[type="checkbox"] {
+  height: 1.5em;
+  width: 1.5em;
+  vertical-align: middle;
+  position: relative;
+  bottom: 1px;
+}
+
+input[type="text"] {
+  height: 2.0em;
+  border-radius: 5px;
+  color: #414141;
+  padding: 0 0 0 20px;
+  width: 60%;
+  border: 2px solid #b1b1b1;
+  font-size: 1.1em;
+  line-height: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.bar {
+  height: 40px;
+  width: 100%;
+  background-color: #47515b;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.todo-list {
+  padding: 20px;
+  background-color: #fff;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.todo {
+  padding: 10px 20px;
+  border-bottom: 2px solid #d6d6d6;
+}
+
+.todo .todo-name {
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 60%;
+  position: relative;
+}
+
+.todo .created-at, .todo .completed-at {
+  font-size: 0.8em;
+  color: #56586c;
+  position: absolute;
+}
+
+.todo .created-at {
+  top: 30px;
+}
+
+.todo .completed-at {
+  top: 30px;
+  left: 250px;
+}
+
+
+.todo:last-child {
+  border-bottom: none;
+}
+
+.actions {
+  float: right;
+}
+
+.todo.completed .todo-name {
+  text-decoration: line-through;
+  color: #888888;
+}
+
+.todo.edited .todo-name:after {
+  content: 'edited';
+  text-transform: uppercase;
+  padding-left: 5px;
+  color: #c86c6c;
+}
+
+.todo.editing .actions {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 550px) {
+
+  .container {
+    width: 100%;
+    margin: 0;
+  }
+
+  .actions {
+    display: block;
+    float: none;
+    text-align: center
+  }
+
+  .todo-list .todo {
+    padding: 10px;
+  }
+
+  .todo-list .todo-name {
+    display: inline;
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+
+  .todo-list .todo-name {
+    padding-right: 30%;
+  }
+
+}

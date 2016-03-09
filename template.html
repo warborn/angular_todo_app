@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Todo List App</title>
+  <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body ng-app="todoListApp">
+  <div class="container">
+    <h1>My TODOs</h1>
+    <div class="bar"></div>
+    <div class="todo-list">
+      <div class="add-todo">
+        <a href="">+ Add a New Task</a>
+      </div>
+      <div class="todo">
+        <input type="checkbox">
+        <label class="todo-name">
+          This is a new todo.
+          <span class="created-at">Created: </span>
+          <span class="completed-at">Completed: </span>
+        </label>
+        <!-- <input type="text" value="this is some text"> -->
+        <div class="actions">
+          <a href="" class="action-btn">Save</a>
+          <a href="" class="action-btn">Delete</a>
+        </div>
+      </div>
+      <div class="todo completed editing">
+        <input type="checkbox">
+        <span class="todo-name">This is a new todo.</span>
+        <div class="actions">
+          <a href="" class="action-btn">Save</a>
+          <a href="" class="action-btn">Delete</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="vendor/angular.min.js" type="text/javascript"></script>
+  <script src="js/app.js" type="text/javascript"></script>
+</body>
+</html>
